@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+    flex-wrap: auto;
+ 
+   
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:cornflowerblue;
+    padding: 10px;
+}
+
+.logo{
+   display: flex;
+    height: 50px;
+    
+    align-items: center;
+    margin-left: 60px;
+}
+.logo img{
+    width: 70px;
+    height: auto;
+}
+.logo h2{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+    color: white;
+}
+
+.logo h2 span{
+    color: rgb(red, green, blue);
+}
+
+.list{
+    display: flex;
+    height: 50px;
+    align-items: center;
+ margin-right: 5rem;
+    /* margin-top: 30px; */ 
+    /* padding: 20px; */
+}
+
+.list ul{
+    display: flex;
+    list-style: none;
+    padding: 20px;
+}
+
+.list ul li a{
+    text-decoration: none;
+    padding: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:larger    ;
+    color: white;
+    cursor: pointer;
+}
+
+.list ul li a:hover{
+    border-bottom: 2px solid rgba(0, 0, 255, 0.632);
+    color:rgba(5,5,112);
+}
+
+.list input{
+    width: 200px;
+    height: 20px;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    color: rgb(6, 6, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+.list img{
+    width: 45px;
+    height: auto;
+}
+
+.main::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    top:0;
+    background-image: url("back.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    z-index: -1;
+    filter: brightness(70%);
+}
+.main{
+    display: flex;
+}
+
+.box{
+    width: 50%;
+    height: 92vh;
+}
+
+.box1{
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.box1 h1{
+    width: 75%;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.box1 h1 span{
+    color: rgb(54,54,143);
+}
+
+.box1 p{
+    width: 80%;
+    font-size: medium;
+    left: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 40px;
+}
+
+.box1 a{
+    text-decoration: none;
+    padding: 18px;
+    background-color: rgb(5, 5, 53);
+    color: white;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box2 img{
+    position: relative;
+    width: 0;
+    right: -40px;
+    transform: rotate(9deg);
+}
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005fa3;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+  }
+  @media (max-width: 991px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 5px;
+      color: blue;
+      background-color:#0077cc;
+      width:50px;
+    
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-left:300px;
+    }
+    .ser{
+        margin-left: 20px;
+    }
+    .list ul {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100px;
+      padding-top: 30px;
+      margin-top: 50px;
+
+      background:#005fa3;
+      margin-left: -10px;
+      gap:0;
+      
+    }
+  
+    .list ul li {
+      width: 100px;
+      padding: 10px 0;
+    }
+  
+    .list ul li a {
+      padding: 10px 15px;
+      display: block;
+      width: 100px;
+    }
+  
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+    }
+  
+    .card {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+  
+ 
+  @media (max-width: 576px) {
+    .logo h2 {
+      font-size: 20px;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .list ul li a {
+      font-size: 16px;
+      padding: 20px 12px;
+    }
+  
+    .card {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .main {
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+ 
+  @media (max-width: 576px) {
+    .main {
+      padding: 15px 10px;
+      flex-direction: column;
+      align-items: stretch;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 570px){
+
+    .box {
+        text-align: center;
+        margin-left: 100px;
+    }
+
+    .nav{
+      padding: 0;
+      display: flex;
+      margin: 0;
+    }
+    .list ul{
+      padding: 0;
+      width: 100px;
+      margin-top: 100px;
+    }
+  }
