@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Airvaan</title>
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+.card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+}
+.card {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  background: #e0e0e0;
+}
+.card i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+      </style>
+      
+    
+      
+</head>
+<body>
+    <nav>
+        <div class="logo">
+           <img src="https://cdn4.iconfinder.com/data/icons/transportation-190/1000/airline_aircraft_airport_air_airliner_airplane_airway-512.png">
+            <h2>AirVaan</h2>
+        </div>
+
+        <div class="list">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <input class="ser" type="text" placeholder="Search">
+            <img src="https://cdn1.iconfinder.com/data/icons/ionicons-fill-vol-2/512/search-circle-512.png" alt="">
+        </div>
+    </nav>
+    
+    
+  
+
+        <section>
+            <div class="main">
+                <div class="box box1" data-aos="fade-up">
+
+                    <h1><span>Hey,</span>where your dream to go?</h1>
+                    <p>Lorem ipsum dolor sit,amet consecterur adipisicing elit.Molestiae ducimus saepe ipsum quasi vero r</p>
+                    <button onclick="openBookingPage()">Book Now</button>
+                </div>
+                <div class="box box2">
+                    <img src="back.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="about" style="padding: 40px; text-align: center;">
+            <h2>About Us</h2>
+            <div class="card-container">
+              <div class="card">
+                <i class="fas fa-users"></i>
+                <h3>Who We Are</h3>
+                <p>We are a passionate airline startup aiming to redefine travel.</p>
+              </div>
+              <div class="card">
+                <i class="fas fa-history"></i>
+                <h3>Our Journey</h3>
+                <p>From local flights to international expansions — fast growth!</p>
+              </div>
+            </div>
+          </section>
+          
+          
+          <section id="services" style="padding: 40px; text-align: center;">
+            <h2>Our Services</h2>
+            <div class="card-container">
+              <div class="card">
+                <i class="fas fa-ticket-alt"></i>
+                <h3>Ticket Booking</h3>
+                <p>Book domestic and international tickets instantly.</p>
+              </div>
+              <div class="card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Safe Travel</h3>
+                <p>Top-notch safety and hygiene during your journey.</p>
+              </div>
+              <div class="card">
+                <i class="fas fa-suitcase-rolling"></i>
+                <h3>Baggage Handling</h3>
+                <p>Smart and secure baggage solutions for travelers.</p>
+              </div>
+            </div>
+          </section>
+          
+          
+          <section id="contact">
+            <div class="box">
+              <h2 style="color: white; padding: 30px;">Contact</h2>
+              <p style="color: white; padding: 0 30px;">Email us at support@airvaan.com</p>
+            </div>
+          </section>
+          
+        <script>
+            function openBookingPage() {
+              window.location.href = 'index2.html';
+            }
+          </script>
+          <footer>
+            <p>© 2025 AirVaan. All rights reserved.</p>
+          </footer>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+          
+</body>
+</html>
